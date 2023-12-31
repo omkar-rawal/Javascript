@@ -1,0 +1,38 @@
+//////// Ascending Order
+function sortAscArray(args)
+{
+let lenArray=args.length;
+for(var i=0; i<lenArray; i++){
+  for(var j=0; j<i; j++){
+    if(args[i]<args[j]){
+      var temp=0;
+      temp=args[i];
+      args[i]=args[j];
+      args[j]=temp;
+      }
+  }
+}
+return args;
+}
+let arr=[9,8,7,6,7,89,43];
+console.log(sortArray(arr));
+
+
+//////// Descending Order
+function sortDscArray(args)
+{
+let lenArray=args.length;
+for(var i=0; i<lenArray; i++){
+  for(var j=0; j<i; j++){
+    if(args[i]>args[j]){
+      var temp=0;
+      temp=args[i];
+      args[i]=args[j];
+      args[j]=temp;
+      }
+  }
+}
+return args;
+}
+let arr=[9,8,7,6,7,89,43];
+console.log(sortDscArray(arr));

@@ -1,0 +1,24 @@
+// Reverse Number & String using loop
+
+let arr="Javascript";
+//let arr=[8,7,8,9,5,4,3,2,66];
+for(var i =arr.length-1; i >= 0; i--)
+ {
+  var res=arr[i];
+  console.log(res);
+ }
+
+// Reverse Number & String using build in method
+
+// Reverse Array of Number 
+
+let arr=[8,7,8,9,5,4,3,2,66];
+let res=arr.reverse();
+console.log(res)
+
+// Reverse Array of String 
+let str="Javascript";
+let seperateStr=str.split('');
+let reverseStr=seperateStr.reverse();
+let joinStr=reverseStr.join('')
+console.log(joinStr)

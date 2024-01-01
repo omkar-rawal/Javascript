@@ -1,0 +1,61 @@
+//Star pattern for 5 element
+var string="";
+for(var i=0; i<=5; i++)
+{
+  for(var j=0; j<i; j++)
+  {
+    string+='*';
+  }
+  string+='\n';
+}
+console.log(string);
+
+//*
+//**
+//***
+//****
+//*****
+
+var string="";
+for(var i=0; i<=5; i++)
+{
+  for(var j=0; j<5; j++)
+  {
+    string+='*';
+  }
+  string+='\n';
+}
+console.log(string);
+
+//*****
+//*****
+//*****
+//*****
+//*****
+//*****
+
+
+
+var string="";
+for(var i=0; i<=5; i++)
+{
+  for(var j=0; j<5-i; j++)
+  {
+    string+=' ';
+  }
+  for (let k = 0; k < i; k++) {
+  string+='*';
+  }
+  string+='\n';
+}
+console.log(string);
+
+//    *
+//   **
+//  ***
+// ****
+//*****
+
+
+
+

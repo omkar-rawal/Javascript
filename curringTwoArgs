@@ -1,0 +1,14 @@
+//Curring and simple function with two arguments
+function twoArgumentwithCurrying(a,b)
+{
+  if(arguments.length>1) {
+  return a+b;
+  }
+  else {
+    return function(b){
+      return a+b;
+    }
+  }
+}
+console.log(twoArgumentwithCurrying(2,5));
+console.log(twoArgumentwithCurrying(2)(5));

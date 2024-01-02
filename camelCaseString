@@ -1,0 +1,7 @@
+let str="this is javascript language";
+var seperateStr=str.split(" ");
+let res= seperateStr.map((m)=>{
+  return m.charAt(0).toUpperCase()+m.substring(1).toLowerCase();
+}).join(" ");
+console.log(res);
+//This Is Javascript Language

@@ -1,0 +1,23 @@
+//Sum of Digit 
+//Using reduce
+var num=123459191;
+var res=num.toString().split("").reduce(function(a,c){
+return a+parseInt(c);
+},0)
+console.log(res);
+
+//Using for...of
+var digit=191919191;
+var sum=0;
+for(let number of digit.toString()){
+sum += parseInt(number);
+}
+console.log(sum);
+
+//Using for...Each
+var digit1=919191;
+var sum1=0;
+var res1=digit1.toString().split('').forEach((r)=>{
+return sum1+=parseInt(r);
+})
+console.log(sum1);

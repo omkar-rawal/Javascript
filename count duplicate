@@ -1,0 +1,18 @@
+// Count All Duplicate Characters in a String 
+obj={};
+var string="omkarrawal";
+for(var i=0;i<string.length;i++){
+var separr=string.charAt(i);
+obj[separr] = isNaN( obj[separr]) ? 1 : obj[separr]+1;
+}
+console.log(obj);
+
+// Count All Duplicate Characters in a array 
+
+var arr=[3,4,5,6,5,4,3,7,8,9,3,2,1,4,5,6];
+
+var res =arr.reduce(function(acc,cur){
+acc[cur]=(acc[cur]||0)+1;
+return acc;
+},{});
+console.log(res);
